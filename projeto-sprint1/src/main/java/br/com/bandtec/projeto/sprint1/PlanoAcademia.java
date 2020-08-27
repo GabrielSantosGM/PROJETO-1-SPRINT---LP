@@ -55,7 +55,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
         Tatsumaki.setForeground(new java.awt.Color(198, 0, 0));
         Tatsumaki.setText("Plano da Academia Tatsumaki");
 
-        lbModalidade.setText("Escolha a modalidade:");
+        lbModalidade.setText("Escolha uma modalidade:");
 
         txtResultado.setColumns(20);
         txtResultado.setRows(5);
@@ -85,7 +85,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
 
         lbPlanoBimestral.setText("-Plano bimestral");
 
-        lbJiuJitsu.setText("-Jiu Jitsu");
+        lbJiuJitsu.setText("-Jiu jitsu");
 
         lbPlanoTrimestral.setText("-Plano trimestral");
 
@@ -123,7 +123,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
                             .addComponent(Calcular, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(txtModalidade)
                             .addComponent(txtPlano))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lbPlanos, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
@@ -236,7 +236,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             if(planoTxt.equals(planoMensal)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -250,7 +250,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             else if(planoTxt.equals(planoBimestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -265,7 +265,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             else if(planoTxt.equals(planoTrimestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -279,7 +279,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             else if(planoTxt.equals(planoSemestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -293,10 +293,10 @@ public class PlanoAcademia extends javax.swing.JFrame {
             else if(planoTxt.equals(planoAnual)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                       + "Plano mensal:\t R$%.2f\n"
+                        + "Plano mensal:\t R$%.2f\n"
                         + "Plano bimestral:\t R$%.2f\n"
                         + "Plano trimestral:\t R$%.2f\n"
                         + "Plano semestral:\t R$%.2f\n"
@@ -316,10 +316,10 @@ public class PlanoAcademia extends javax.swing.JFrame {
             if(planoTxt.equals(planoMensal)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                       + "Plano mensal:\t R$%.2f\n"
+                        + "Plano mensal:\t R$%.2f\n"
                         + "Plano bimestral:\t R$%.2f\n"
                         + "Plano trimestral:\t R$%.2f\n"
                         + "Plano semestral:\t R$%.2f\n"
@@ -330,7 +330,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             else if(planoTxt.equals(planoBimestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -344,7 +344,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             else if(planoTxt.equals(planoTrimestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -358,7 +358,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             else if(planoTxt.equals(planoSemestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -372,7 +372,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             else if(planoTxt.equals(planoAnual)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -395,7 +395,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             if(planoTxt.equals(planoMensal)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -409,7 +409,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             else if(planoTxt.equals(planoBimestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -423,7 +423,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             else if(planoTxt.equals(planoTrimestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -437,7 +437,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             else if(planoTxt.equals(planoSemestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -451,7 +451,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             else if(planoTxt.equals(planoAnual)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -474,7 +474,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             if(planoTxt.equals(planoMensal)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -488,7 +488,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             else if(planoTxt.equals(planoBimestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -502,7 +502,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             else if(planoTxt.equals(planoTrimestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -516,7 +516,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             else if(planoTxt.equals(planoSemestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"
@@ -530,7 +530,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
             else if(planoTxt.equals(planoAnual)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o plano %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
                         + "Plano mensal:\t R$%.2f\n"

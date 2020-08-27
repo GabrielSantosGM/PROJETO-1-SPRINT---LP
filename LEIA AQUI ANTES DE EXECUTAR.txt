@@ -2,4 +2,10 @@
 Olá professor(res),
 Só gostaria de orientá-los que, na hora de preencher os campos no programa, por favor use SOMENTE a PRIMEIRA LETRA maiúscula.
 
+Exemplo:
+Escolha uma modalidade:
+Jiu jitsu
+Escolha o plano:
+Plano mensal
+
 Obrigado pela atenção!
