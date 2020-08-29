@@ -123,7 +123,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
                             .addComponent(Calcular, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(txtModalidade)
                             .addComponent(txtPlano))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lbPlanos, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
@@ -225,6 +225,7 @@ public class PlanoAcademia extends javax.swing.JFrame {
         Integer valorSemestral = 6;
         Integer valorAnual = 12;
         
+        
         if(modalidadeTxt.equals(musculacao)){
             Double valorMusculacao = 69.90;
             Double resultado = valorMusculacao * valorMensal;
@@ -232,77 +233,89 @@ public class PlanoAcademia extends javax.swing.JFrame {
             Double resultado3 = valorMusculacao * valorTrimestral;
             Double resultado4 = valorMusculacao * valorSemestral;
             Double resultado5 = valorMusculacao * valorAnual;
+            Double desconto25 = resultado4 - ((25 * resultado4)/100);
+            Double desconto35 = resultado5 - ((35 * resultado5)/100);
             
             if(planoTxt.equals(planoMensal)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
                         musculacao, planoMensal, resultado, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        ,resultado3,desconto25, desconto35));
             }
             else if(planoTxt.equals(planoBimestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
                         musculacao, planoBimestral, resultado2, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        ,resultado3,desconto25,desconto35));
                 
             }
             else if(planoTxt.equals(planoTrimestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
                         musculacao, planoTrimestral, resultado3, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        ,resultado3,desconto25,desconto35));
             }
             else if(planoTxt.equals(planoSemestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
-                        musculacao, planoSemestral, resultado4, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
+                        musculacao, planoSemestral, desconto25, resultado, resultado2
+                        ,resultado3,desconto25,desconto35));
             }
             else if(planoTxt.equals(planoAnual)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
-                        musculacao, planoAnual, resultado5, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
+                        musculacao, planoAnual, desconto35, resultado, resultado2
+                        ,resultado3,desconto25,desconto35));
             }
         }
         else if(modalidadeTxt.equals(natacao)){
@@ -312,76 +325,88 @@ public class PlanoAcademia extends javax.swing.JFrame {
             Double resultado3 = valorNatacao * valorTrimestral;
             Double resultado4 = valorNatacao * valorSemestral;
             Double resultado5 = valorNatacao * valorAnual;
+            Double desconto25 = resultado4 - ((25 * resultado4)/100);
+            Double desconto35 = resultado5 - ((35 * resultado5)/100);
             
             if(planoTxt.equals(planoMensal)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
                         natacao, planoMensal, resultado, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        ,resultado3,desconto25,desconto35));
             }
             else if(planoTxt.equals(planoBimestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
                         natacao, planoBimestral, resultado2, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        ,resultado3,desconto25,desconto35));
             }
             else if(planoTxt.equals(planoTrimestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
                         natacao, planoTrimestral, resultado3, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        ,resultado3,desconto25,desconto35));
             }
             else if(planoTxt.equals(planoSemestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
-                        natacao, planoSemestral, resultado4, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
+                        natacao, planoSemestral, desconto25, resultado, resultado2
+                        ,resultado3,desconto25,desconto35));
             }
             else if(planoTxt.equals(planoAnual)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
-                        natacao, planoAnual, resultado5, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
+                        natacao, planoAnual, desconto35, resultado, resultado2
+                        ,resultado3,desconto25,desconto35));
             }
         }
         else if(modalidadeTxt.equals(jiujitsu)){
@@ -391,76 +416,88 @@ public class PlanoAcademia extends javax.swing.JFrame {
             Double resultado3 = valorJiuJitsu * valorTrimestral;
             Double resultado4 = valorJiuJitsu * valorSemestral;
             Double resultado5 = valorJiuJitsu * valorAnual;
+            Double desconto25 = resultado4 - ((25 * resultado4)/100);
+            Double desconto35 = resultado5 - ((35 * resultado5)/100);
             
             if(planoTxt.equals(planoMensal)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
                         jiujitsu, planoMensal, resultado, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        ,resultado3,desconto25,desconto35));
             }
             else if(planoTxt.equals(planoBimestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
                         jiujitsu, planoBimestral, resultado2, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        ,resultado3,desconto25,desconto35));
             }
             else if(planoTxt.equals(planoTrimestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
                         jiujitsu, planoTrimestral, resultado3, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        ,resultado3,desconto25,desconto35));
             }
             else if(planoTxt.equals(planoSemestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
-                        jiujitsu, planoSemestral, resultado4, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
+                        jiujitsu, planoSemestral, desconto25, resultado, resultado2
+                        ,resultado3,desconto25,desconto35));
             }
             else if(planoTxt.equals(planoAnual)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
-                        jiujitsu, planoAnual, resultado5, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
+                        jiujitsu, planoAnual, desconto35, resultado, resultado2
+                        ,resultado3,desconto25,desconto35));
             }
         }
         else if(modalidadeTxt.equals(muaythai)){
@@ -470,76 +507,88 @@ public class PlanoAcademia extends javax.swing.JFrame {
             Double resultado3 = valorMuayThai * valorTrimestral;
             Double resultado4 = valorMuayThai * valorSemestral;
             Double resultado5 = valorMuayThai * valorAnual;
+            Double desconto25 = resultado4 - ((25 * resultado4)/100);
+            Double desconto35 = resultado5 - ((35 * resultado5)/100);
             
             if(planoTxt.equals(planoMensal)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
                         muaythai, planoMensal, resultado, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        ,resultado3,desconto25,desconto35));
             }
             else if(planoTxt.equals(planoBimestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
                         muaythai, planoBimestral, resultado2, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        ,resultado3,desconto25,desconto35));
             }
             else if(planoTxt.equals(planoTrimestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
                         muaythai, planoTrimestral, resultado3, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        ,resultado3,desconto25,desconto35));
             }
             else if(planoTxt.equals(planoSemestral)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
-                        muaythai, planoSemestral, resultado4, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
+                        muaythai, planoSemestral, desconto25, resultado, resultado2
+                        ,resultado3,desconto25,desconto35));
             }
             else if(planoTxt.equals(planoAnual)){
                 
                 txtResultado.setText(String.format("Você escolheu a modalidade "
-                        + "%s e o %s, o valor que deverá pagar é de %.2f.\n"
+                        + "%s e o %s, o valor que deverá pagar é de R$%.2f.\n"
                         + "Aqui vai uma tabela de preços caso queira saber sobre"
                         + " outros planos:\n\n"
-                        + "Plano mensal:\t R$%.2f\n"
-                        + "Plano bimestral:\t R$%.2f\n"
-                        + "Plano trimestral:\t R$%.2f\n"
-                        + "Plano semestral:\t R$%.2f\n"
-                        + "Plano anual:\t R$%.2f\n",
-                        muaythai, planoAnual, resultado5, resultado, resultado2
-                        ,resultado3,resultado4,resultado5));
+                        + "Plano mensal: R$%.2f\n"
+                        + "Plano bimestral: R$%.2f\n"
+                        + "Plano trimestral: R$%.2f\n"
+                        + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
+                        + "de desconto)\n"
+                        + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
+                        + "desconto)\n",
+                        muaythai, planoAnual, desconto35, resultado, resultado2
+                        ,resultado3,desconto25,desconto35));
             }
         }
         
