@@ -233,6 +233,8 @@ public class PlanoAcademia extends javax.swing.JFrame {
             Double resultado3 = valorMusculacao * valorTrimestral;
             Double resultado4 = valorMusculacao * valorSemestral;
             Double resultado5 = valorMusculacao * valorAnual;
+            Double valorDesconto = (25 * resultado4)/100;
+            Double valorDesconto2 = (35 * resultado5)/100;
             Double desconto25 = resultado4 - ((25 * resultado4)/100);
             Double desconto35 = resultado5 - ((35 * resultado5)/100);
             
@@ -246,11 +248,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         musculacao, planoMensal, resultado, resultado, resultado2
-                        ,resultado3,desconto25, desconto35));
+                        ,resultado3, desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
             else if(planoTxt.equals(planoBimestral)){
                 
@@ -262,11 +265,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         musculacao, planoBimestral, resultado2, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
                 
             }
             else if(planoTxt.equals(planoTrimestral)){
@@ -279,11 +283,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         musculacao, planoTrimestral, resultado3, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
             else if(planoTxt.equals(planoSemestral)){
                 
@@ -295,11 +300,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         musculacao, planoSemestral, desconto25, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
             else if(planoTxt.equals(planoAnual)){
                 
@@ -311,11 +317,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         musculacao, planoAnual, desconto35, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
         }
         else if(modalidadeTxt.equals(natacao)){
@@ -325,6 +332,8 @@ public class PlanoAcademia extends javax.swing.JFrame {
             Double resultado3 = valorNatacao * valorTrimestral;
             Double resultado4 = valorNatacao * valorSemestral;
             Double resultado5 = valorNatacao * valorAnual;
+            Double valorDesconto = (25 * resultado4)/100;
+            Double valorDesconto2 = (35 * resultado5)/100;
             Double desconto25 = resultado4 - ((25 * resultado4)/100);
             Double desconto35 = resultado5 - ((35 * resultado5)/100);
             
@@ -338,11 +347,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         natacao, planoMensal, resultado, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
             else if(planoTxt.equals(planoBimestral)){
                 
@@ -354,11 +364,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         natacao, planoBimestral, resultado2, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
             else if(planoTxt.equals(planoTrimestral)){
                 
@@ -370,11 +381,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         natacao, planoTrimestral, resultado3, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
             else if(planoTxt.equals(planoSemestral)){
                 
@@ -386,11 +398,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         natacao, planoSemestral, desconto25, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
             else if(planoTxt.equals(planoAnual)){
                 
@@ -402,11 +415,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         natacao, planoAnual, desconto35, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
         }
         else if(modalidadeTxt.equals(jiujitsu)){
@@ -416,6 +430,8 @@ public class PlanoAcademia extends javax.swing.JFrame {
             Double resultado3 = valorJiuJitsu * valorTrimestral;
             Double resultado4 = valorJiuJitsu * valorSemestral;
             Double resultado5 = valorJiuJitsu * valorAnual;
+            Double valorDesconto = (25 * resultado4)/100;
+            Double valorDesconto2 = (35 * resultado5)/100;
             Double desconto25 = resultado4 - ((25 * resultado4)/100);
             Double desconto35 = resultado5 - ((35 * resultado5)/100);
             
@@ -429,11 +445,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         jiujitsu, planoMensal, resultado, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
             else if(planoTxt.equals(planoBimestral)){
                 
@@ -445,11 +462,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         jiujitsu, planoBimestral, resultado2, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
             else if(planoTxt.equals(planoTrimestral)){
                 
@@ -461,11 +479,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         jiujitsu, planoTrimestral, resultado3, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
             else if(planoTxt.equals(planoSemestral)){
                 
@@ -477,11 +496,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         jiujitsu, planoSemestral, desconto25, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
             else if(planoTxt.equals(planoAnual)){
                 
@@ -493,11 +513,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         jiujitsu, planoAnual, desconto35, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
         }
         else if(modalidadeTxt.equals(muaythai)){
@@ -507,6 +528,8 @@ public class PlanoAcademia extends javax.swing.JFrame {
             Double resultado3 = valorMuayThai * valorTrimestral;
             Double resultado4 = valorMuayThai * valorSemestral;
             Double resultado5 = valorMuayThai * valorAnual;
+            Double valorDesconto = (25 * resultado4)/100;
+            Double valorDesconto2 = (35 * resultado5)/100;
             Double desconto25 = resultado4 - ((25 * resultado4)/100);
             Double desconto35 = resultado5 - ((35 * resultado5)/100);
             
@@ -520,11 +543,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         muaythai, planoMensal, resultado, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
             else if(planoTxt.equals(planoBimestral)){
                 
@@ -536,11 +560,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         muaythai, planoBimestral, resultado2, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
             else if(planoTxt.equals(planoTrimestral)){
                 
@@ -552,11 +577,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         muaythai, planoTrimestral, resultado3, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
             else if(planoTxt.equals(planoSemestral)){
                 
@@ -568,11 +594,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         muaythai, planoSemestral, desconto25, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
             else if(planoTxt.equals(planoAnual)){
                 
@@ -584,11 +611,12 @@ public class PlanoAcademia extends javax.swing.JFrame {
                         + "Plano bimestral: R$%.2f\n"
                         + "Plano trimestral: R$%.2f\n"
                         + "Plano semestral: R$%.2f (Esse plano contém 25 porcento "
-                        + "de desconto)\n"
+                        + "de desconto, equivalente à R$%.2f)\n"
                         + "Plano anual: R$%.2f (Esse plano contém 35 porcento de "
-                        + "desconto)\n",
+                        + "desconto, equivalente à R$%.2f)\n",
                         muaythai, planoAnual, desconto35, resultado, resultado2
-                        ,resultado3,desconto25,desconto35));
+                        ,resultado3,desconto25, valorDesconto, desconto35,
+                        valorDesconto2));
             }
         }
         
